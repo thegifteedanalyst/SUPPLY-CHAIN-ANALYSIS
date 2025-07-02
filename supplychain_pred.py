@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("Zomato Dataset.csv")
+df = pd.read_csv("Desktop/DATA TYPES/Zomato Dataset.csv")
 
 # Preprocess
 df['Festival'] = df['Festival'].fillna('No')
