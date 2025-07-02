@@ -1,8 +1,11 @@
 import streamlit as st
 import pandas as pd
+import pickle
+import numpy as np
 
-# Load dataset
-df = pd.read_csv("Desktop/DATA TYPES/Zomato Dataset.csv")
+with open("supplychain_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
 
 # Preprocess
 df['Festival'] = df['Festival'].fillna('No')
