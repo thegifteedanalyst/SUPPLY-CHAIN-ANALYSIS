@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 
-with open("supplychain_model.pkl", "rb") as f:
+with open("supplychain_analysis_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 
